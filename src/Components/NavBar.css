@@ -1,0 +1,47 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    padding: 20px 80px;
+}
+
+#navBar{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navBar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navBar li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+#navBar li a:hover,
+#navBar li a.active {
+    color: #804000;
+}
+
+#navBar li a:hover::after,
+#navBar li a.active::after {
+
+content: "";
+width: 30%;
+height: 2px;
+background: #804000;
+position: absolute;
+bottom: -4px;
+left: 20px;
+}
+
