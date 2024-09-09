@@ -5,4 +5,19 @@
 .cart a{
     text-decoration: none;
     color: white;
+    transition: 0.3s ease-in-out
+}
+
+.cart a:hover{
+    color: #804000;
+}
+
+.cart a:hover::after {
+
+content: "";
+width: 30%;
+height: 2px;
+background: #804000;
+bottom: -4px;
+
 }

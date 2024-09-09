@@ -14,5 +14,5 @@ function CartWidget() {
     </div>
     );
 }
-  
+
 export default CartWidget;
