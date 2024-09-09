@@ -16,9 +16,9 @@ function NavBar(){
             <div>
                 <ul id='navBar'>
                     <button> <a className='active' href="index.html">Home</a></button>
-                    <button> <a href="index.html">PC Gamers</a></button>
-                    <button> <a href="index.html">Consolas y Juegos</a></button>
-                    <button> <a href="index.html">Impresoras 3D</a></button>
+                    <button> <a href="">PC Gamers</a></button>
+                    <button> <a href="">Consolas y Juegos</a></button>
+                    <button> <a href="">Impresoras 3D</a></button>
                 </ul>
             </div>
           < CartWidget />

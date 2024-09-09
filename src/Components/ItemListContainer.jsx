@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 function ItemListContainer({ texto }) {
 return (
     <>
+    <main>
     <h2 className="titulo">{texto}</h2>
+    </main>
     </>
 );
 }
