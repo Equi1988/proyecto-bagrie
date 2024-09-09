@@ -1,10 +1,12 @@
 nav{
     display: flex;
     align-items: center;
+    font-family: 'Times New Roman', Times, serif;
     justify-content: space-between;
     background: black;
     color: white;
     padding: 20px 80px;
+    border-radius: 2rem;
 }
 
 #navBar{
@@ -12,15 +14,19 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
-#navBar li{
+#navBar button{
     list-style: none;
     padding: 0 20px;
     position: relative;
+    background: black;
+    border-bottom: none;
+    border: #804000;
 }
 
-#navBar li a{
+#navBar button a{
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 600;
@@ -28,13 +34,13 @@ nav{
     transition: 0.3s ease-in-out;
 }
 
-#navBar li a:hover,
-#navBar li a.active {
+#navBar button a:hover,
+#navBar button a.active {
     color: #804000;
 }
 
-#navBar li a:hover::after,
-#navBar li a.active::after {
+#navBar button a:hover::after,
+#navBar button a.active::after {
 
 content: "";
 width: 30%;

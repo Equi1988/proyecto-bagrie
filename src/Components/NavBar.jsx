@@ -3,6 +3,7 @@ import "./NavBar.css";
 import "./CartWidget.css";
 
 
+
 function NavBar(){
 
     return (
@@ -14,10 +15,10 @@ function NavBar(){
         </a>
             <div>
                 <ul id='navBar'>
-                    <li> <a className='active' href="index.html">Home</a></li>
-                    <li> <a href="index.html">Productos</a></li>
-                    <li> <a href="index.html">Nosotros</a></li>
-                    <li> <a href="index.html">Contacto</a></li>
+                    <button> <a className='active' href="index.html">Home</a></button>
+                    <button> <a href="index.html">PC Gamers</a></button>
+                    <button> <a href="index.html">Consolas y Juegos</a></button>
+                    <button> <a href="index.html">Impresoras 3D</a></button>
                 </ul>
             </div>
           < CartWidget />

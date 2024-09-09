@@ -15,6 +15,3 @@ texto: PropTypes.string.isRequired,
 
 export default ItemListContainer;
 
-
-
-
