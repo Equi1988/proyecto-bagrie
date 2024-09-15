@@ -21,7 +21,7 @@ function NavBar(){
                     <button> <a href="">Impresoras 3D</a></button>
                 </ul>
             </div>
-          < CartWidget />
+        < CartWidget />
         </nav>
         </header>
     </>
