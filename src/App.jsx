@@ -1,30 +1,30 @@
-import { useState } from 'react';
 import './App.css';
+import { BrowserRouter, Routes,Route } from 'react-router-dom';
 import NavBar from './Components/NavBar.jsx';
 import ItemListContainer from './Components/ItemListContainer.jsx';
-import ProducList from './Components/ProductsList.jsx';
+// import ProductsList from './Components/ProductsList.jsx';
+import PcGamersViews from './views/PCGamersViews/PcGamersViews.jsx';
+import Consolas from './views/Consolas/Consolas.jsx';
+import HomeView from './views/HomeViews/HomeViews.jsx';
+import ProductView from './views/ProductView/ProductView.jsx';
+import Accesorios from './views/Accesorios/Accesorios.jsx';
 
 function App() {
 
-const [tareas, setTareas] = useState([
-  
-  { id: 1, nombre: "Estudiar React" },
-  { id: 2, nombre: "preparar mate" },
-  { id: 3, nombre: "Merendar"}
-
-]);
-
   return (
     <>
-      <header>
+      
+        <BrowserRouter>
         <NavBar/>
-      </header>
-
-      <main>
-      <ItemListContainer texto = "Bienvenidos a BagRie Shop" />
-      {/* <TaskList tareas={tareas}/> */}
-      <ProducList/>
-      </main>
+        <Routes>
+        <Route exact path="/" element={<HomeView />} />
+          <Route exact path="/pcgamers" element={<PcGamersViews />} />
+          <Route exact path="/consolas/" element={<Consolas />} />
+          <Route exact path="/accesorios" element={<Accesorios />} />
+          <Route exact path="/product/:id" element={< ProductView />} />
+        </Routes>
+        </BrowserRouter>
+      
     </>
   );
 }

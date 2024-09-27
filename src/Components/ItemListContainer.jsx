@@ -1,5 +1,4 @@
 import './ItemListContainer.css';
-import PropTypes from 'prop-types';
 
 function ItemListContainer({ texto }) {
 return (
@@ -11,9 +10,6 @@ return (
 );
 }
 
-ItemListContainer.propTypes = {
-texto: PropTypes.string.isRequired,
-};
 
 export default ItemListContainer;
 

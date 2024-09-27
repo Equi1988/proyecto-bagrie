@@ -1,24 +1,20 @@
 import { useEffect, useState } from "react";
-import ProducCard from "./ProducCard";
+import ProductCard from "./ProductCard";
+import { getProducts } from "../asyncMock";
 
-export default function ProducList (){
+export default function ProductsList (){
 
-    const [ produts, setProducts] =useState([]);
+    const [products, setProducts] = useState([]);
 
-    useEffect (() =>{
-
-        fetch("https://fakestoreapi.com/products/category/electronics")
-        .then(response=> response.json())
-        .then (data => setProducts (data))
-        .catch ((error)=> console.log(error))
-        .finally(()=> console.log ("Final del proceso"))
+    useEffect(() => {
+    getProducts.then((data) => setProducts(data));
     }, []);
 
     return (
         <>
-        <section>
-        { produts.map((product) =>( 
-            <ProducCard key={product.id} product={product}/>
+        <section style={{ display:"flex", gap:10}}>
+        { products.map((product) =>( 
+            <ProductCard key={product.id} product={product}/>
         ))}
         </section>
 
