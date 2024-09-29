@@ -49,7 +49,6 @@ const products = [
     },
 ];
 
-// Cambiado para que sea una función
 export const getProducts = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
@@ -58,12 +57,12 @@ export const getProducts = () => {
     });
 };
 
-// Esta función sigue igual
+
 export const getProduct = (id) => {
     return products.find((prod) => prod.id == id);
 };
 
-// Esta función también sigue igual
+
 export const getCategory = (category) => {
     return products.filter((product) => product.category === category);
 };
