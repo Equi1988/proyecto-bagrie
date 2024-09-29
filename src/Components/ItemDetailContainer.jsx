@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getProduct } from '../../asyncMock';
+import { getProduct } from '../asyncMock';
 
-export default function ProductView() {
-  const [product, setProduct] = useState({});
+export default function ItemDetailContainer() {
+const [product, setProduct] = useState({});
 
-  const { id } = useParams();
+const { id } = useParams();
 
 useEffect(() => {
     setProduct(getProduct(id));
@@ -25,3 +25,4 @@ return (
     </>
 );
 }
+

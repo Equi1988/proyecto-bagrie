@@ -12,7 +12,7 @@ return(
     <img style={{width:"100%", height: "auto"}} src={product.image} alt= {product.title} />
     <p>Category: {product.category}</p>
     <p>Price: $ {product.price}</p>
-    <button style= {{ textAlign: "none",background:"Black", color: "white", width: 90, height: 40, fontSize: "1rem", margin: "1rem"} }> <Link to= {`./product/${product.id}`}>Detalles </Link></button>
+    <button style= {{ textAlign: "none",background:"Black", color: "white", width: 90, height: 40, fontSize: "1rem", margin: "1rem"} }> <Link to= {`./item/${product.id}`}>Detalles </Link></button>
 
     {/* <button style= {{background:"Black", color: "white", width: 100, height: 40, fontSize: "1rem"} }> <Link to={`/product/${product.id}`} Detalle></Link></button>  */}
 </article>

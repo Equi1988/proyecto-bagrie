@@ -15,14 +15,11 @@ function NavBar(){
         </Link>
             <div>
                 <ul id='navBar'>
-                    <button> <Link to={"/"}> Home </Link>
+                    <button> <Link to={"/category/Pc Gamers"}> PC Gamers </Link>
                     </button>
-
-                    <button> <Link to={"pcgamers"}> PC Gamers </Link>
+                    <button> <Link to={"/category/Consolas"}> Consolas </Link>
                     </button>
-                    <button> <Link to={"consolas"}> Consolas </Link>
-                    </button>
-                    <button> <Link to={"accesorios"}> Accesorios </Link>
+                    <button> <Link to={"/category/Accesorios"}> Accesorios </Link>
                     </button>
                 </ul>
             </div>
