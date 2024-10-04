@@ -5,10 +5,13 @@ h2{
     color: #804000;
 }
 
+
+
+
 .card{
     Color: white;
     display: flex;
-    gap: 10;
+    gap: 12;
     align-items: center; 
     justify-content:center;
 }

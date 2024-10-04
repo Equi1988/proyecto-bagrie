@@ -27,12 +27,11 @@ export default function ItemListContainer() {
 
     return (
         <>
-            <h2>Productos BagRie Shop</h2>
+            <h2>{category}</h2>
             <section className="card">
                 <div className="card-wrapper">
                 {products.map((product) => (
                     <ProductCard key={product.id} product={product}  />
-                
                 ))}
                 </div>
             </section>

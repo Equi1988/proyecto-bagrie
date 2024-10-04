@@ -2,6 +2,7 @@ import CartWidget from "./CartWidget.jsx";
 import "./NavBar.css";
 import "./CartWidget.css";
 import { Link } from "react-router-dom";
+import { CartProvider } from "../Context/CartContext.jsx";
 
 
 function NavBar(){
@@ -23,6 +24,7 @@ function NavBar(){
                     </button>
                 </ul>
             </div>
+
         < CartWidget />
         </nav>
     </>
