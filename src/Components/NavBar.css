@@ -3,7 +3,7 @@ nav{
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
     justify-content: space-between;
-    background: black;
+    background: #1c1c1c;
     color: white;
     padding: 20px 80px;
     border-radius: 2rem;
@@ -21,7 +21,7 @@ nav{
     list-style: none;
     padding: 0 20px;
     position: relative;
-    background: black;
+    background: #1c1c1c;
     border-bottom: none;
     border: #804000;
 }

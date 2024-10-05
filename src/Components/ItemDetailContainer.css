@@ -1,0 +1,59 @@
+.details-button-detail {
+    border-radius: 1rem;
+    background: black; 
+    color: white; 
+    width: 10%; 
+    height: 40px; 
+    border: none; 
+    cursor: pointer; 
+    margin-bottom: 0.2rem;
+}
+
+.details-button-detail:hover {
+    background-color: #804000; /* Color más oscuro al pasar el mouse */
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ItemDetailContainer.css */
+
+.article-container {
+    padding: 2rem; /* Espaciado interior */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    color: white; /* Color del texto */
+    background: #333; /* Fondo oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    max-width: 600px; /* Ancho máximo */
+    margin: 2rem auto; /* Centrado y espaciado exterior */
+    display: flex; /* Flexbox para organizar el contenido */
+    flex-direction: column; /* Colocar los elementos en columna */
+    align-items: center; /* Centrados horizontalmente */
+}
+
+.article-container img {
+    max-width: 100%; /* Asegura que la imagen no exceda el contenedor */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    margin: 1rem 0; /* Espaciado vertical alrededor de la imagen */
+}
+
+.details-button-detail {
+    border-radius: 1rem;
+    background: black; 
+    color: white; 
+    width: 150px; /* Ancho fijo para el botón */
+    height: 40px; 
+    border: none; 
+    cursor: pointer; 
+    margin-top: 1rem; /* Margen superior para separación */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+}
+
+.details-button-detail:hover {
+    background-color: #804000; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}

@@ -21,3 +21,36 @@ background: #804000;
 bottom: -4px;
 
 }
+
+/* Cart.css */
+
+.cart-widget {
+    position: relative; /* Para que el conteo de ítems se posicione correctamente */
+    display: inline-block; /* Permite que se ajuste al contenido */
+    text-decoration: none; /* Sin subrayado */
+    color: #804000; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    padding: 10px; /* Espacio interior */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+.cart-widget:hover {
+    background-color: rgba(128, 64, 0, 0.1); /* Color de fondo al pasar el ratón */
+}
+
+.item-count {
+    position: absolute; /* Para superponer sobre el carrito */
+    top: -5px; /* Ajustar la posición vertical */
+    right: -10px; /* Ajustar la posición horizontal */
+    background-color: #804000; /* Fondo rojo para destacar el conteo */
+    color: white; /* Color del texto */
+    border-radius: 50%; /* Hacer que sea circular */
+    padding: 5px 10px; /* Espacio interior */
+    font-size: 0.8rem; /* Tamaño de fuente más pequeño */
+    font-weight: bold; /* Negrita */
+    display: flex; /* Usar flexbox para centrar el texto */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    min-width: 25px; /* Ancho mínimo para asegurar que el conteo se vea bien */
+}

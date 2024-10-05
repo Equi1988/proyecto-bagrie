@@ -11,6 +11,40 @@
   text-align: center;
 }
 
+h1{
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: #804000;
+  margin: 20px;
+
+}
+
+footer {
+  background-color:#1c1c1c; /* Color de fondo marrón */
+  color: white; /* Color del texto */
+  text-align: center; /* Centrar el texto */
+  padding: 1rem; /* Espaciado interior */
+  position: relative; /* Permite el uso de z-index si es necesario */
+  bottom: 0; /* Asegura que esté al fondo */
+  width: 100%; /* Ocupa todo el ancho */
+  margin-top: 20px; /* Espaciado superior */
+  border-radius: 2rem;
+}
+
+footer p {
+  margin: 0; /* Elimina margen para un aspecto más limpio */
+  font-size: 1rem; /* Tamaño de fuente */
+}
+
+/* Agregar estilo responsivo */
+@media (max-width: 600px) {
+  footer {
+      font-size: 0.8rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+  }
+}
+
+
 /* .logo {
   height: 6em;
   padding: 1.5em;
