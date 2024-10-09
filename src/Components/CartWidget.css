@@ -1,56 +1,50 @@
-.cart{
-    font-size: 1.2rem;
-}
-
-.cart a{
-    text-decoration: none;
-    color: white;
-    transition: 0.3s ease-in-out
-}
-
-.cart a:hover{
-    color: #804000;
-}
-
-.cart a:hover::after {
-
-content: "";
-width: 30%;
-height: 2px;
-background: #804000;
-bottom: -4px;
-
-}
-
-/* Cart.css */
-
 .cart-widget {
-    position: relative; /* Para que el conteo de ítems se posicione correctamente */
-    display: inline-block; /* Permite que se ajuste al contenido */
-    text-decoration: none; /* Sin subrayado */
-    color: #804000; /* Color del texto */
-    font-weight: bold; /* Negrita */
-    padding: 10px; /* Espacio interior */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s; /* Transición suave para el fondo */
-}
-
-.cart-widget:hover {
-    background-color: rgba(128, 64, 0, 0.1); /* Color de fondo al pasar el ratón */
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-size: 24px; /* Tamaño del ícono */
+    cursor: pointer;
 }
 
 .item-count {
-    position: absolute; /* Para superponer sobre el carrito */
-    top: -5px; /* Ajustar la posición vertical */
-    right: -10px; /* Ajustar la posición horizontal */
-    background-color: #804000; /* Fondo rojo para destacar el conteo */
+    position: absolute;
+    top: -5px; /* Ajustar según necesites */
+    right: -10px; /* Ajustar según necesites */
+    background-color: red; /* Color de fondo */
     color: white; /* Color del texto */
-    border-radius: 50%; /* Hacer que sea circular */
-    padding: 5px 10px; /* Espacio interior */
-    font-size: 0.8rem; /* Tamaño de fuente más pequeño */
-    font-weight: bold; /* Negrita */
-    display: flex; /* Usar flexbox para centrar el texto */
-    align-items: center; /* Centrar verticalmente */
-    justify-content: center; /* Centrar horizontalmente */
-    min-width: 25px; /* Ancho mínimo para asegurar que el conteo se vea bien */
+    border-radius: 50%; /* Hacerlo circular */
+    padding: 2px 5px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño del texto */
+}
+
+
+.product-title {
+    font-size: 12px; /* Tamaño más pequeño para el título */
+    margin-left: 5px; /* Espacio entre el ícono y el título */
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Espacio entre cantidad y el resto del contenido */
+}
+
+.quantity-button {
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    width: 30px; /* Ancho fijo */
+    height: 30px; /* Alto fijo */
+    font-size: 18px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    margin: 0 5px; /* Espaciado entre botones */
+}
+
+.quantity-button:hover {
+    background-color: #0056b3; /* Color al pasar el ratón */
+}
+
+.quantity-button:focus {
+    outline: none; /* Eliminar el contorno al hacer clic */
 }

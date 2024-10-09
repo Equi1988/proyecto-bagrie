@@ -1,29 +1,48 @@
 import { useEffect, useState } from "react";
-import ProductCard from "./ProductCard";
 import ItemListContainer from "./ItemListContainer";
 import ReactLoading from "react-loading";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./ContainerLoading.css";
+import Banner from "./Banner";
 
-export default function ContainerLoading () {
+export default function ContainerLoading() {
+    const [isLoading, setIsLoading] = useState(true);
 
-const [isLoading, setIsLoading] = useState (true);
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 2000); // Simula 2 segundos de carga
 
-useEffect (() => {
+        return () => clearTimeout(timer);
+    }, []);
 
-    const timer = setTimeout(() => {
-        setIsLoading(false);
-    }, 2000);
+    const fotos = [
+        "https://www.cdmarket.com.ar/Pubs/Sites/Default/Custom/home-office.jpg",
+        "https://www.shutterstock.com/image-vector/games-time-neon-text-gamepad-260nw-2288041501.jpg", // Reemplaza con URLs válidas
+        "https://content.wepik.com/statics/21948625/preview-page0.jpg"  // Reemplaza con URLs válidas
+    ];
 
-    return () => clearTimeout(timer);
+    return (
+        <>
+        <Banner fotos={fotos} />
+        <div>
+            {isLoading ? (
+                <div className="loading-container">
+                    <ReactLoading type="balls" color="#804000" height={'20%'} width={'20%'} />
+                    <p>Cargando...</p>
+                </div>
+            ) : (
+                <>
 
-}, []);
+                
+                <ItemListContainer />
 
-return <>
+                </>
+            )}
+        </div>
 
-<div className="loading-container">
-{isLoading ? <ReactLoading type="balls" color="#804000" height={'20%'} width={'20%'}/> : <ItemListContainer/>} 
-</div>
-</>
-
+        </>
+    );
 }
+
 

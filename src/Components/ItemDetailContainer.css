@@ -1,4 +1,5 @@
 .details-button-detail {
+    font-family: 'Montserrat', sans-serif;
     border-radius: 1rem;
     background: black; 
     color: white; 
@@ -22,6 +23,7 @@
 /* ItemDetailContainer.css */
 
 .article-container {
+    font-family: 'Montserrat', sans-serif;
     padding: 2rem; /* Espaciado interior */
     font-size: 1.5rem; /* Tamaño de fuente */
     color: white; /* Color del texto */

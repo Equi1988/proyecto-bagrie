@@ -1,9 +1,9 @@
 
-
 import { useEffect, useState, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProduct } from '../asyncMock'; // Asegúrate de que esta función retorne lo correcto
 import { CartContext } from '../Context/CartContext';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./ItemDetailContainer.css";
 
 export default function ItemDetailContainer() {

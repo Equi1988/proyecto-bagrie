@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ProductCard from "./ProductCard";
 import { getProducts } from "../asyncMock";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./ItemListContainer.css";
 
 export default function ItemListContainer() {

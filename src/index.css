@@ -8,8 +8,8 @@
 /* Estilo para el body */
 body {
   width: 100%;
-  font-family: 'Arial', sans-serif; /* Cambiado a una fuente más moderna */
-  background-color: #f5f5f5; /* Un fondo más suave */
+  font-family: 'Montserrat', sans-serif; /* Cambiado a una fuente más moderna */
+  background-color: gainsboro; /* Un fondo más suave */
   color: #333; /* Color de texto más oscuro para mejor contraste */
 }
 
@@ -20,4 +20,24 @@ main {
   display: flex; /* Usar flexbox para mayor control del contenido */
   flex-direction: column; /* Organiza el contenido en columna */
   align-items: center; /* Centra el contenido horizontalmente */
+}
+
+/* Estilo para el loading */
+.loading-container {
+  display: flex; /* Usar flexbox para centrar */
+  flex-direction: column; /* Organiza en columna */
+  align-items: center; /* Centra el contenido horizontalmente */
+  justify-content: center; /* Centra el contenido verticalmente */
+  height: 100%; /* Asegura que ocupe todo el espacio disponible */
+}
+
+/* Estilo para el footer */
+footer {
+  background-color: #1c1c1c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  width: 80%; /* Ancho del footer */
+  border-radius: 2rem; /* Bordes redondeados */
+  margin: 0 auto; /* Centra horizontalmente */
 }

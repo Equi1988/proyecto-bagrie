@@ -1,0 +1,64 @@
+.carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px; /* Bordes redondeados para todo el carrusel */
+    overflow: hidden; /* Asegura que no se salgan los bordes */
+}
+
+.banner-image {
+    width: 90%; /* Asegura que la imagen ocupe todo el ancho */
+    height: 340px; /* Altura fija */
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+    margin: 1rem; /* Espacio alrededor de la imagen */
+    margin-left: 1rem;
+    border-radius: 2rem; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra opcional */
+}
+
+.carousel-item {
+    border-radius: 1rem; /* Bordes redondeados para el contenedor de cada imagen */
+    overflow: hidden; /* Asegura que el borde redondeado se aplique correctamente */
+}
+
+/* .imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; Bordes redondeados para la imagen
+} */
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    border-radius: 50%; /* Bordes redondeados */
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Alto del botón */
+    display: flex; /* Para centrar el contenido */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    top: 50%; /* Centrarlos verticalmente */
+    transform: translateY(-50%); /* Ajustar el centrado */
+}
+
+.carousel-control-prev {
+    left: 10px; /* Espaciado desde la izquierda */
+}
+
+.carousel-control-next {
+    right: 10px; /* Espaciado desde la derecha */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Hacer los íconos blancos */
+    width: 20px; /* Ajusta el tamaño de los íconos */
+    height: 20px; /* Ajusta el tamaño de los íconos */
+}
+
+
+/* Opcional: Sombra en la imagen */
+.imagen {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra opcional */
+}

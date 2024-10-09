@@ -7,6 +7,7 @@ const products = [
         description: 'Pc Gamer Cpu Compu Completa Amd Ryzen 5 5600g 16g 240g',
         image: 'https://http2.mlstatic.com/D_NQ_NP_854927-MLA79347626791_092024-O.webp',
     },
+
     {
         id: 2,
         title: 'Pc Gamer Amd Ryzen 5',
