@@ -1,0 +1,59 @@
+.container {
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.formulario input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%; /* Hace que los inputs ocupen el ancho completo */
+    max-width: 400px; /* Limita el ancho máximo de los inputs */
+}
+
+.formulario input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.enviar {
+    width: 20%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 2rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center; /* Centra el texto dentro del botón */
+}
+
+.enviar:hover {
+    background-color: #333; /* Cambia el color al pasar el mouse */
+}
+
+.success-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #28a745;
+}

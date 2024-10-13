@@ -58,7 +58,7 @@
 }
 
 .quantity-button:hover {
-    background-color: #0056b3; /* Color al pasar el ratón */
+    background-color: #804000; /* Color al pasar el ratón */
 }
 
 .quantity-button:focus {

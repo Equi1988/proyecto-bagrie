@@ -59,3 +59,29 @@
     background-color: #804000; /* Color más oscuro al pasar el mouse */
     transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
 }
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.quantity-button {
+    background-color: #804000; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    width: 30px; /* Ancho fijo */
+    height: 30px; /* Alto fijo */
+    font-size: 18px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    margin: 0 5px; /* Espaciado entre botones */
+}
+
+.quantity-button:hover {
+    background-color: #804000; /* Color al pasar el ratón */
+}
+
+.quantity-button:focus {
+    outline: none; /* Eliminar el contorno al hacer clic */
+}

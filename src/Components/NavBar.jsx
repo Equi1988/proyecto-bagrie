@@ -2,7 +2,7 @@ import CartWidget from "./CartWidget.jsx";
 import "./NavBar.css";
 import "./CartWidget.css";
 import { Link } from "react-router-dom";
-import { CartProvider } from "../Context/CartContext.jsx";
+// import { CartProvider } from "../Context/CartContext.jsx";
 
 
 function NavBar(){
@@ -21,6 +21,8 @@ function NavBar(){
                     <button> <Link to={"/category/Consolas"}> Consolas </Link>
                     </button>
                     <button> <Link to={"/category/Accesorios"}> Accesorios </Link>
+                    </button>
+                    <button> <Link to={"/contacto"}> Contacto </Link>
                     </button>
                 </ul>
             </div>

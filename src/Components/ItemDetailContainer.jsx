@@ -1,52 +1,66 @@
-
-import { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { useParams } from 'react-router-dom';
-import { getProduct } from '../asyncMock'; // Asegúrate de que esta función retorne lo correcto
+import { doc, getDoc} from "firebase/firestore";
+import { db } from '../firebase/firebase';
 import { CartContext } from '../Context/CartContext';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./ItemDetailContainer.css";
 
 export default function ItemDetailContainer() {
-    const [product, setProduct] = useState(null); // Cambié a null para manejar la carga inicial
+    const [product, setProduct] = useState(null);
     const { id } = useParams();
-    const { addItem, removeItem, isInCart } = useContext(CartContext); // Desestructuración correcta
+    const { addItem, removeItem, isInCart, cart } = useContext(CartContext);
+    const [quantity, setQuantity] = useState(1);
 
     useEffect(() => {
-        // Asegúrate de que getProduct(id) retorne el producto correctamente
-        const fetchProduct = async () => {
-            const productData = await getProduct(id);
-            setProduct(productData);
-        };
-        fetchProduct();
+
+        const docRef = doc (db, "products",id);
+        getDoc(docRef)
+        .then((resp)=>{
+            setProduct (
+                {...resp.data(), id: resp.id});
+        })
+
     }, [id]);
 
+    useEffect(() => {
+        if (product) {
+            const inCart = cart.find(item => item.id === product.id);
+            if (inCart) {
+                setQuantity(Math.min(inCart.quantity, product.stock)); // Limitar a stock
+            }
+        }
+    }, [product, cart]);
+
     const handleAdd = () => {
-        addItem(product);
+        if (product && product.stock >= quantity) {
+            addItem(product, quantity);
+        } else {
+            alert("No hay suficiente stock disponible");
+        }
     };
 
-    const handleRemove = () => {
-        removeItem(product.id);
-    };
-
-    // Manejar el caso en que el producto no se ha cargado todavía
     if (!product) {
-        return <p>Cargando...</p>; // Mensaje de carga o spinner
+        return <p>Cargando...</p>;
     }
 
     return (
         <article className="article-container">
             <h2>Product Detail</h2>
-            <h4>
-                {product.title} - {product.category}
-            </h4>
+            <h4>{product.title} - {product.category}</h4>
             <img style={{ maxWidth: "20rem", margin: "1rem" }} src={product.image} alt={product.title} />
             <p>Description: {product.description}</p>
-            <p>$ {product.price}</p>
-
+            <p>Price: $ {product.price}</p>
+            <p>Stock: {product.stock}</p>
+            <div className="quantity-container">
+                <button onClick={() => setQuantity(Math.max(quantity - 1, 1))} className="quantity-button">-</button>
+                <span>{quantity}</span>
+                <button onClick={() => setQuantity(Math.min(quantity + 1, product.stock))} className="quantity-button">+</button>
+            </div>
             {isInCart(product.id) ? (
-                <button onClick={handleRemove} className='details-button-detail'>Remover</button>
+                <button style={{fontSize:"1rem"}}onClick={() => removeItem(product.id)} className='details-button-detail'>Remover</button>
             ) : (
-                <button onClick={handleAdd} className='details-button-detail'>Comprar</button>
+                <button style={{fontSize:"1rem"}} onClick={handleAdd} className='details-button-detail'>Agregar al carrito</button>
             )}
         </article>
     );
