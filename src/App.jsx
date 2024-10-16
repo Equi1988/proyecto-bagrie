@@ -13,8 +13,8 @@ import Contacto from './Components/Contacto.jsx';
 
 function App() {
     return (
+      <CartProvider>
         <BrowserRouter>
-            <CartProvider>
                 <NavBar />
                 <div>
                     <Routes>
@@ -27,10 +27,13 @@ function App() {
                         <Route exact path="/checkout" element={<Checkout />} />
                     </Routes>
                 </div>
+                </BrowserRouter>
             </CartProvider>
-        </BrowserRouter>
+        
     );
 }
 
 export default App;
+
+
 

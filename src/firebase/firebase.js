@@ -21,24 +21,16 @@ export const db = getFirestore(app);
 
 //Obtener toda una coleccion
 export async function getProducts() {
-
-
     try {
         const querySnapshot = await getDocs(collection(db, "products"))
         const productsList = querySnapshot.docs.map(docu => {
-
             return {
                 id: docu.id,
                 ...docu.data()
-
             }
-
-
         })
-
         return productsList;
     } catch (error) {
         console.error("error al obtener el documento: ", error);
-
     }
 }
