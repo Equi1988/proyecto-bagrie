@@ -1,0 +1,19 @@
+/* src/components/Alert.css */
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Rojo */
+    color: white; /* Texto blanco */
+    border-radius: 5px;
+    position: fixed; /* Fijo en la parte superior */
+    top: 20px; /* Distancia desde la parte superior */
+    left: 50%;
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+    transition: opacity 0.5s ease; /* Efecto de desvanecimiento */
+}
+
+.closebtn {
+    margin-left: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}

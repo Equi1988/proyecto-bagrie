@@ -23,17 +23,17 @@ const Checkout = () => {
         const ordersRef = collection(db, "orders");
 
         try {
-            // Agregar la orden a Firestore
+            
             const docRef = await addDoc(ordersRef, orders);
-            // Actualizar el stock de cada producto
+            
             await Promise.all(cart.map(async (item) => {
                 const productRef = doc(db, "products", item.id);
                 await updateDoc(productRef, {
-                    stock: increment(-item.quantity) // Reducir el stock
+                    stock: increment(-item.quantity) 
                 });
             }));
-            setOrdersId(docRef.id); // Guardar el ID de la orden
-            clearCart(); // Limpiar el carrito
+            setOrdersId(docRef.id); 
+            clearCart(); 
         } catch (error) {
             console.error("Error al agregar la orden:", error);
         }

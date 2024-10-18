@@ -3,7 +3,7 @@
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente si se desea */
+    align-items: center; 
+    justify-content: center;
     
 }

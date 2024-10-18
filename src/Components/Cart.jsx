@@ -20,7 +20,7 @@ const Cart = () => {
                     {cart.map(item => (
                         <div key={item.id} className="cart-item">
                             <img src={item.image} alt={item.name} />
-                            <h3>{item.name}</h3>
+                            <h3>{item.title}</h3>
                             <p>Precio: ${item.price}</p>
                             <p>Cantidad: {item.quantity}</p>
                             <div className="quantity-controls">

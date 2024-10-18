@@ -11,15 +11,15 @@ export default function ContainerLoading() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoading(false);
-        }, 2000); // Simula 2 segundos de carga
+        }, 2000);
 
         return () => clearTimeout(timer);
     }, []);
 
     const fotos = [
-        "https://www.cdmarket.com.ar/Pubs/Sites/Default/Custom/home-office.jpg",
-        "https://www.shutterstock.com/image-vector/games-time-neon-text-gamepad-260nw-2288041501.jpg", // Reemplaza con URLs válidas
-        "https://content.wepik.com/statics/21948625/preview-page0.jpg"  // Reemplaza con URLs válidas
+        "https://coregaming.com.mx/assets/uploads/sw_banner_ensamble_coregaming_2.png?1643400664",
+        "https://www.shutterstock.com/image-vector/games-time-neon-text-gamepad-260nw-2288041501.jpg",
+        "https://content.wepik.com/statics/21948625/preview-page0.jpg"
     ];
 
     return (

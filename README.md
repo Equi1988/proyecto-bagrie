@@ -1,8 +1,29 @@
-# React + Vite
+# BagRie Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+BagRie Shop es una plataforma de comercio electrónico que ofrece una amplia gama de productos de alta calidad. El objetivo del proyecto es proporcionar una experiencia de compra intuitiva y atractiva para los usuarios.
 
-Currently, two official plugins are available:
+## Tabla de Contenidos
+- [Características](#características)
+- [Tecnologías Usadas](#tecnologías-usadas)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Contribuciones](#contribuciones)
+- [Licencia](#licencia)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características
+- **Interfaz de usuario responsiva**: Se adapta a diferentes tamaños de pantalla.
+- **Navegación fácil**: Acceso rápido entre categorías de productos.
+- **Carrito de compras funcional**: Añade, elimina y actualiza la cantidad de productos.
+- **Integración de métodos de pago**: Procesa pagos de manera segura.
+- **Sección de contacto y soporte**: Facilita la comunicación con el servicio al cliente.
+
+## Tecnologías Usadas
+- **Frontend**: 
+  - React
+  - CSS3
+  - HTML5
+
+## Instalación
+1. Clona el repositorio:
+   ```bash
+   git https://github.com/Equi1988/proyecto-bagrie.git

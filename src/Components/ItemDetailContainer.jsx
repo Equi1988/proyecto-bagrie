@@ -27,7 +27,7 @@ export default function ItemDetailContainer() {
         if (product) {
             const inCart = cart.find(item => item.id === product.id);
             if (inCart) {
-                setQuantity(Math.min(inCart.quantity, product.stock)); // Limitar a stock
+                setQuantity(Math.min(inCart.quantity, product.stock));
             }
         }
     }, [product, cart]);

@@ -1,43 +1,68 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilo para el body */
 body {
   width: 100%;
-  font-family: 'Montserrat', sans-serif; /* Cambiado a una fuente más moderna */
-  background-color: gainsboro; /* Un fondo más suave */
-  color: #333; /* Color de texto más oscuro para mejor contraste */
+  font-family: 'Montserrat', sans-serif;
+  background-color: gainsboro;
+  color: #333;
 }
 
-/* Estilo para main */
 main {
   width: 100%;
-  padding: 20px 100px; /* Espaciado interior */
-  display: flex; /* Usar flexbox para mayor control del contenido */
-  flex-direction: column; /* Organiza el contenido en columna */
-  align-items: center; /* Centra el contenido horizontalmente */
+  padding: 20px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Estilo para el loading */
 .loading-container {
-  display: flex; /* Usar flexbox para centrar */
-  flex-direction: column; /* Organiza en columna */
-  align-items: center; /* Centra el contenido horizontalmente */
-  justify-content: center; /* Centra el contenido verticalmente */
-  height: 100%; /* Asegura que ocupe todo el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
-/* Estilo para el footer */
 footer {
   background-color: #1c1c1c;
   color: white;
   text-align: center;
   padding: 1rem;
-  width: 80%; /* Ancho del footer */
-  border-radius: 2rem; /* Bordes redondeados */
-  margin: 0 auto; /* Centra horizontalmente */
+  width: 80%;
+  border-radius: 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* Mantener el texto en columna */
+  align-items: center; /* Centra el contenido horizontalmente */
 }
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  display: flex; /* Alinear enlaces horizontalmente */
+  gap: 10px; /* Espacio entre los enlaces */
+}
+
+footer a {
+  display: flex;
+  color: white;
+  transition: transform 0.3s;
+}
+
+footer a:hover {
+  transform: scale(1.1);
+}
+
+footer svg {
+  width: 24px; /* Tamaño del icono */
+  height: 24px; /* Tamaño del icono */
+  fill: currentColor; /* Usa el color del texto del enlace */
+}
+
+

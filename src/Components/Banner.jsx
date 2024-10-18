@@ -1,6 +1,6 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap'; // Asegúrate de importar Carousel
-import './Banner.css'; // Asegúrate de crear este archivo
+import { Carousel } from 'react-bootstrap'; 
+import './Banner.css'; 
 
 const Banner = ({ fotos }) => {
     return (

@@ -2,49 +2,49 @@
     position: relative;
     display: inline-flex;
     align-items: center;
-    font-size: 24px; /* Tamaño del ícono */
+    font-size: 24px;
     cursor: pointer;
 }
 
 .item-count {
     position: absolute;
-    top: -5px; /* Ajustar según necesites */
-    right: -10px; /* Ajustar según necesites */
-    background-color: red; /* Color de fondo */
-    color: white; /* Color del texto */
-    border-radius: 50%; /* Hacerlo circular */
-    padding: 2px 5px; /* Espaciado interno */
-    font-size: 14px; /* Tamaño del texto */
+    top: -5px;
+    right: -10px;
+    background-color: #804000;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 14px;
 }
 
-
 .product-title {
-    font-size: 12px; /* Tamaño más pequeño para el título */
-    margin-left: 5px; /* Espacio entre el ícono y el título */
+    font-size: 12px;
+    margin-left: 5px;
 }
 
 .quantity-controls {
     display: flex;
     align-items: center;
-    margin-top: 10px; /* Espacio entre cantidad y el resto del contenido */
+    margin-top: 10px;
 }
 
 .quantity-button {
-    background-color: #007bff; /* Color de fondo */
-    color: white; /* Color del texto */
-    border: none; /* Sin borde */
-    border-radius: 4px; /* Bordes redondeados */
-    width: 30px; /* Ancho fijo */
-    height: 30px; /* Alto fijo */
-    font-size: 18px; /* Tamaño del texto */
-    cursor: pointer; /* Cambia el cursor al pasar el ratón */
-    margin: 0 5px; /* Espaciado entre botones */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 5px; 
 }
 
 .quantity-button:hover {
-    background-color: #0056b3; /* Color al pasar el ratón */
+    background-color: #0056b3;
 }
 
 .quantity-button:focus {
-    outline: none; /* Eliminar el contorno al hacer clic */
+    outline: none; 
 }
+

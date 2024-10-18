@@ -4,20 +4,15 @@ import { Link } from 'react-router-dom';
 import './CartWidget.css';
 
 const CartWidget = () => {
-    const { cart } = useContext(CartContext);
-
-    // Cambiar a una suma simple
+    const { cart } = useContext(CartContext);    
     const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
-
-    console.log(cart);
-    console.log(totalItems);
 
     return (
         <Link to="/cart">
             <div className="cart-widget">   
                 <span role="img" aria-label="cart">🛒</span>
                 {totalItems > 0 && (
-                    <span className="item-count">{totalItems}</span> // Mostrar cantidad aquí
+                    <span className="item-count">{totalItems}</span>
                 )}
             </div>
         </Link>

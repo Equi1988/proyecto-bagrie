@@ -17,7 +17,7 @@
 .formulario {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los elementos horizontalmente */
+    align-items: center; 
 }
 
 .formulario input {
@@ -26,8 +26,8 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    width: 100%; /* Hace que los inputs ocupen el ancho completo */
-    max-width: 400px; /* Limita el ancho máximo de los inputs */
+    width: 100%; 
+    max-width: 400px; 
 }
 
 .formulario input:focus {
@@ -44,11 +44,11 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
-    text-align: center; /* Centra el texto dentro del botón */
+    text-align: center; 
 }
 
 .enviar:hover {
-    background-color: #333; /* Cambia el color al pasar el mouse */
+    background-color: #333;
 }
 
 .success-message {

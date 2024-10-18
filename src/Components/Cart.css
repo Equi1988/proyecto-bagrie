@@ -1,146 +1,93 @@
-/* Cart.css */
-
 .cart-container {
     max-width: 800px;
     font-size: 1rem;
-    /* Ancho máximo del carrito */
     margin: 20px auto;
-    /* Centrado en la página */
     padding: 20px;
-    /* Espacio interior */
     border: 1px solid #ccc;
-    /* Borde alrededor del carrito */
     border-radius: 8px;
-    /* Bordes redondeados */
     background-color: #1c1c1c;
-    /* Color de fondo */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    /* Sombra sutil */
-
     color: white;
-
 }
 
 .cart-container h2 {
     text-align: center;
-    /* Centra el título */
     color: white;
-    /* Color del texto */
     margin-bottom: 20px;
-    /* Espacio inferior */
 }
 
 .cart-item {
     display: flex;
-    /* Usar flexbox para los ítems */
     justify-content: space-between;
-    /* Espacio entre nombre y precio */
     align-items: center;
-    /* Centrar verticalmente */
     padding: 10px;
-    /* Espacio interior de cada ítem */
     border-bottom: 1px solid #ddd;
-    /* Separador entre ítems */
 }
 
 .cart-item:last-child {
     border-bottom: none;
-    /* Eliminar el borde del último ítem */
 }
 
 .cart-item h3 {
     margin: 0;
-    /* Eliminar margen por defecto */
     color: white;
-    /* Color del texto */
 }
 
 .cart-item p {
     margin: 0;
-    /* Eliminar margen por defecto */
 }
 
 .button-container-cart {
     display: flex;
-    /* Usar flexbox para los botones */
     gap: 10px;
-    /* Espacio entre los botones */
 }
 
 .details-button-cart {
     background-color: #804000;
-    /* Color de fondo del botón */
     color: white;
-    /* Color del texto */
     border: none;
-    /* Sin borde */
     border-radius: 5px;
-    /* Bordes redondeados */
     padding: 10px 15px;
-    /* Espacio interior */
     cursor: pointer;
-    /* Cursor de puntero */
     transition: background-color 0.3s;
-    /* Transición suave al cambiar el color */
 }
 
 .details-button-cart:hover {
     background-color: #6a3200;
-    /* Color al pasar el ratón */
 }
 
 .cart-empty {
     text-align: center;
-    /* Centrar el mensaje */
     color: white;
-    /* Color del texto */
     font-size: 1.2em;
-    /* Tamaño de la fuente */
 }
 
 .link-back {
     display: inline-block;
-    /* Para poder aplicar margen */
     margin-top: 20px;
-    /* Espacio superior */
     color: #804000;
-    /* Color del enlace */
     text-decoration: none;
-    /* Sin subrayado */
     font-weight: bold;
-    /* Negrita */
 }
 
 .link-back:hover {
     text-decoration: underline;
-    /* Subrayado al pasar el ratón */
 }
 
-/* Cart.css */
-
-/* Estilo general para las imágenes en el carrito */
 .cart-item img {
     width: 80px;
-    /* Ancho fijo para las imágenes en el carrito */
     height: auto;
-    /* Mantener la relación de aspecto */
     border-radius: 5px;
-    /* Bordes redondeados para suavizar el aspecto */
     margin-right: 10px;
-    /* Espacio a la derecha de la imagen */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    /* Sombra sutil para dar profundidad */
 }
 
-/* Opcional: hacer que la imagen sea un poco más grande al pasar el ratón */
 .cart-item img:hover {
     transform: scale(1.05);
-    /* Aumentar ligeramente el tamaño */
     transition: transform 0.2s ease;
-    /* Transición suave para el efecto de zoom */
 }
 
-.link-finish{
+.link-finish {
     text-decoration: none;
     font-size: 1.0rem;
     font-weight: 600;

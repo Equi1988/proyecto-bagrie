@@ -19,8 +19,7 @@ export default function ItemListContainer() {
 
         getDocs (q)
         .then((resp)=>{
-            // console.log(resp.docs[0].id)
-            // console.log(resp.docs[0].data());
+
 
             setProducts(
 
