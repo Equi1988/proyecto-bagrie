@@ -14,8 +14,7 @@ BagRie Shop es una plataforma de comercio electrónico que ofrece una amplia gam
 - **Interfaz de usuario responsiva**: Se adapta a diferentes tamaños de pantalla.
 - **Navegación fácil**: Acceso rápido entre categorías de productos.
 - **Carrito de compras funcional**: Añade, elimina y actualiza la cantidad de productos.
-- **Integración de métodos de pago**: Procesa pagos de manera segura.
-- **Sección de contacto y soporte**: Facilita la comunicación con el servicio al cliente.
+- **Sección de contacto**: Facilita la comunicación con el servicio al cliente.
 
 ## Tecnologías Usadas
 - **Frontend**: 
