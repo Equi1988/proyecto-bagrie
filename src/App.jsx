@@ -13,7 +13,7 @@ import Contacto from './Components/Contacto.jsx';
 
 function App() {
     return (
-      <CartProvider>
+    <CartProvider>
         <BrowserRouter>
                 <NavBar />
                 <div>
