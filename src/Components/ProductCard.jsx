@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../Context/CartContext';
-import Swal from 'sweetalert2'; // Importar SweetAlert
+import Swal from 'sweetalert2'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ProductCard.css';
 
@@ -15,7 +15,7 @@ export default function ProductCard({ product }) {
             icon: 'warning',
             title: '¡Atención!',
             text: message,
-            timer: 3000, // Se cierra automáticamente después de 3 segundos
+            timer: 3000, 
             showConfirmButton: false,
         });
     };

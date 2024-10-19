@@ -2,6 +2,8 @@
 
 BagRie Shop es una plataforma de comercio electrónico que ofrece una amplia gama de productos de alta calidad. El objetivo del proyecto es proporcionar una experiencia de compra intuitiva y atractiva para los usuarios.
 
+[![Build Status](https://bagrieshop.netlify.app/)](https://bagrieshop.netlify.app/)
+
 ## Tabla de Contenidos
 - [Características](#características)
 - [Tecnologías Usadas](#tecnologías-usadas)
@@ -37,18 +39,18 @@ BagRie Shop es una plataforma de comercio electrónico que ofrece una amplia gam
     npm start
 
 ## Uso
-Una vez que el servidor esté en funcionamiento, puedes acceder a la aplicación en tu navegador en http://localhost:3000. Explora las diferentes categorías de productos, añade artículos al carrito y completa tus compras.
+Una vez que el servidor esté en funcionamiento, puedes acceder a la aplicación en tu navegador en http://localhost:5173. Explora las diferentes categorías de productos, añade artículos al carrito y completa tus compras.
 
 ## Contribuciones 
 Las contribuciones son bienvenidas. Para contribuir, sigue estos pasos:
-1.Haz un fork del repositorio.
-2.Crea una nueva rama:
+1. Haz un fork del repositorio.
+2. Crea una nueva rama:
   git checkout -b feature/nueva-caracteristica
-3.Realiza tus cambios y haz un commit:
-  git commit -m 'Añadir nueva característica'
-4.Haz push a tu rama:
+3. Realiza tus cambios y haz un commit:
+   git commit -m 'Añadir nueva característica'
+4. Haz push a tu rama:
   git push origin feature/nueva-caracteristica
-5.Abre un pull request.
+5. Abre un pull request.
 
 ## Licencia
 Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.

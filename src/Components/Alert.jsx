@@ -1,6 +1,5 @@
-// src/components/Alert.js
 import React from 'react';
-import './Alert.css'; // Ruta del archivo CSS
+import './Alert.css';
 
 const Alert = ({ message, onClose }) => {
     return (
