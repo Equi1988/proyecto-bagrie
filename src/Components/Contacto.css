@@ -10,3 +10,9 @@
     z-index: 1000; 
     transition: opacity 0.5s ease;
 }
+
+.error-message {
+    color: #804000;
+    font-size: 0.9rem;
+}
+
