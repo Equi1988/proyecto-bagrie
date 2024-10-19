@@ -21,8 +21,39 @@ BagRie Shop es una plataforma de comercio electrónico que ofrece una amplia gam
   - React
   - CSS3
   - HTML5
+  - Bootstrap
+  - SweetAlert
+  - Netlify (host)
 
 ## Instalación
 1. Clona el repositorio:
    ```bash
-   git https://github.com/Equi1988/proyecto-bagrie.git
+   git clone https://github.com/Equi1988/proyecto-bagrie.git
+2. Navega al directorio del proyecto 
+    cd proyecto-bagrie
+3. Instala las dependencias:
+    npm install
+4. Inicia el servidor de desarrollo:
+    npm start
+
+## Uso
+Una vez que el servidor esté en funcionamiento, puedes acceder a la aplicación en tu navegador en http://localhost:3000. Explora las diferentes categorías de productos, añade artículos al carrito y completa tus compras.
+
+## Contribuciones 
+Las contribuciones son bienvenidas. Para contribuir, sigue estos pasos:
+1.Haz un fork del repositorio.
+2.Crea una nueva rama:
+  git checkout -b feature/nueva-caracteristica
+3.Realiza tus cambios y haz un commit:
+  git commit -m 'Añadir nueva característica'
+4.Haz push a tu rama:
+  git push origin feature/nueva-caracteristica
+5.Abre un pull request.
+
+## Licencia
+Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+
+## Contacto
+Si tienes preguntas o sugerencias, no dudes en contactar al equipo de BagRie Shop a través del correo electrónico.
+
+¡Gracias por tu interés en BagRie Shop! Tu apoyo es fundamental para mejorar esta plataforma.

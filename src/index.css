@@ -13,7 +13,7 @@ body {
 
 main {
   width: 100%;
-  padding: 20px 100px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,12 +32,13 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
-  width: 80%;
+  width: 90%;
+  max-width: 800px;
   border-radius: 2rem;
   margin: 0 auto;
   display: flex;
-  flex-direction: column; /* Mantener el texto en columna */
-  align-items: center; /* Centra el contenido horizontalmente */
+  flex-direction: column;
+  align-items: center;
 }
 
 footer p {
@@ -45,12 +46,12 @@ footer p {
 }
 
 .footer-links {
-  display: flex; /* Alinear enlaces horizontalmente */
-  gap: 10px; /* Espacio entre los enlaces */
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 footer a {
-  display: flex;
   color: white;
   transition: transform 0.3s;
 }
@@ -60,9 +61,35 @@ footer a:hover {
 }
 
 footer svg {
-  width: 24px; /* Tamaño del icono */
-  height: 24px; /* Tamaño del icono */
-  fill: currentColor; /* Usa el color del texto del enlace */
+  width: 24px;
+  height: 24px;
+  fill: currentColor; 
 }
+
+@media (max-width: 768px) {
+  main {
+    padding: 20px 10px;
+  }
+  
+  footer {
+    width: 95%;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 0.5rem;
+  }
+
+  footer p {
+    font-size: 0.8rem; 
+  }
+}
+
+
 
 

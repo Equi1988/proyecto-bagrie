@@ -1,17 +1,16 @@
-h2{
+h2 {
     text-align: center;
     font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
     color: #804000;
 }
 
-
-.card{
-    Color: white;
+.card {
+    color: white;
     display: flex;
-    gap: 12;
+    gap: 12px;
     align-items: center; 
-    justify-content:center;
+    justify-content: center;
 }
 
 .card-wrapper {
@@ -19,6 +18,31 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2.5rem; 
+    }
+
+    .card {
+        flex-direction: column; 
+    }
+
+    .card-wrapper {
+        padding: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2rem; 
+    }
+
+    .card {
+        gap: 8px; 
+    }
+}
+
 
 
 

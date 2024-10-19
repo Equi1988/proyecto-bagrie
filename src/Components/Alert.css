@@ -1,19 +1,41 @@
-/* src/components/Alert.css */
+
 .alert {
     padding: 20px;
-    background-color: #f44336; /* Rojo */
-    color: white; /* Texto blanco */
+    background-color: #f44336;
+    color: white;
     border-radius: 5px;
-    position: fixed; /* Fijo en la parte superior */
-    top: 20px; /* Distancia desde la parte superior */
+    position: fixed;
+    top: 20px;
     left: 50%;
-    transform: translateX(-50%); /* Centrar horizontalmente */
-    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
-    transition: opacity 0.5s ease; /* Efecto de desvanecimiento */
+    transform: translateX(-50%);
+    z-index: 1000;
+    transition: opacity 0.5s ease;
+    width: 90%; 
+    max-width: 400px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .closebtn {
     margin-left: 15px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
 }
+
+
+.closebtn:hover {
+    color: #ffcccc;
+}
+
+@media (max-width: 480px) {
+    .alert {
+        font-size: 14px; 
+        padding: 15px;
+    }
+
+    .closebtn {
+        font-size: 1rem;
+    }
+}
+

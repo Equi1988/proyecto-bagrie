@@ -1,38 +1,36 @@
-nav{
+nav {
     display: flex;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     justify-content: space-between;
     background: #1c1c1c;
     color: white;
-    padding: 20px 80px;
+    padding: 20px 5%;
     border-radius: 2rem;
 }
 
-#navBar{
-
+#navBar {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    flex-wrap: wrap;
 }
 
-#navBar button{
+#navBar button {
     font-family: 'Montserrat', sans-serif;
     list-style: none;
     padding: 0 20px;
     position: relative;
-    background: #1c1c1c;
-    border-bottom: none;
-    border: #804000;
+    background: transparent;
+    border: none;
 }
 
-#navBar button a{
+#navBar button a {
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 600;
     color: white;
-    transition: 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 #navBar button a:hover,
@@ -42,13 +40,33 @@ nav{
 
 #navBar button a:hover::after,
 #navBar button a.active::after {
-
-content: "";
-width: 30%;
-height: 2px;
-background: #804000;
-position: absolute;
-bottom: -4px;
-left: 20px;
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #804000;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
 }
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 20px 10%;
+    }
+
+    #navBar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #navBar button {
+        padding: 10px 0;
+    }
+
+    #navBar button a {
+        font-size: 1.1rem;
+    }
+}
+
 

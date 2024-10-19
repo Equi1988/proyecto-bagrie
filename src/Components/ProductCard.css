@@ -1,3 +1,9 @@
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .card-wrapper .product-card {
     width: 20rem; 
     height: 500px; 
@@ -10,6 +16,7 @@
     padding: 10px; 
     border-radius: 8px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease;
 }
 
 .card-wrapper .product-card:hover {
@@ -20,6 +27,7 @@
     width: 100%;
     height: 150px; 
     object-fit: cover; 
+    border-radius: 8px;
 }
 
 .card-wrapper .details-button {
@@ -32,6 +40,7 @@
     border: none; 
     cursor: pointer; 
     margin-bottom: 0.2rem;
+    transition: background-color 0.3s;
 }
 
 .card-wrapper .details-button:hover {
@@ -55,10 +64,11 @@
     font-size: 18px; 
     cursor: pointer; 
     margin: 0 5px; 
+    transition: background-color 0.3s;
 }
 
 .quantity-button:hover {
-    background-color: #804000; 
+    background-color: #6a3200; 
 }
 
 .quantity-button:focus {
@@ -69,6 +79,27 @@
     font-size: 16px; 
     margin: 0 5px; 
 }
+
+@media (max-width: 768px) {
+    .card-wrapper .product-card {
+        width: 90%; 
+        margin: 20px auto; 
+    }
+}
+
+@media (max-width: 480px) {
+    .card-wrapper .product-card {
+        height: auto; 
+    }
+
+    .quantity-button {
+        width: 25px; 
+        height: 25px; 
+        font-size: 16px; 
+    }
+}
+
+
 
 
 
